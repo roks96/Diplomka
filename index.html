@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/index.css" rel="stylesheet">
   <link rel="shortcut icon" href="./images/Shop-Co-favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
   <script defer src="./js/index.js" type="module"></script>
   <title>Магазин одежды SHOP.CO</title>
 </head>
@@ -42,7 +45,7 @@
           <use class="burger__icon-menu" href="./icons/header-sprite.svg#burger"></use>
           <use class="burger__icon-cross" href="./icons/header-sprite.svg#menu-cross"></use>
         </svg>
-        
+
       </button>
 
       <a class="logo header__logo" href="#">
@@ -406,23 +409,23 @@
         </div>
       </div>
     </section>
-    <section class="what-about-us">
-      <div class="what-about-us__wrapper container">
+    <!-- <section class="what-about-us swiper">
+      <div class="what-about-us__wrapper container ">
         <h2 class="what-about-us__title title-md">что о нас говорят</h2>
         <div class="what-about-us__button-wrapper">
-          <button class="what-about-us__button--left">
+          <button class="what-about-us__button--left ">
             <svg class="" width="23" height="23">
               <use class="" href="./icons/What-about-us.svg#slider-button-left"></use>
             </svg>
           </button>
-          <button class="what-about-us__button-right">
+          <button class="what-about-us__button-right ">
             <svg class="" width="23" height="23">
               <use class="" href="./icons/What-about-us.svg#slider-button-right"></use>
             </svg>
           </button>
         </div>
-        <div class="what-about-us__list">
-          <article class="what-about-us-card what-about-us__item-one">
+        <div class="what-about-us__list swiper-wrapper">
+          <article class="what-about-us-card what-about-us__item-one swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -448,7 +451,7 @@
               покупка превзошла мои ожидания.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-two">
+          <article class="what-about-us-card what-about-us__item-two swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -474,7 +477,7 @@
               и случаев.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-three">
+          <article class="what-about-us-card what-about-us__item-three swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -500,7 +503,7 @@
               соответствует последним модным трендам.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-four">
+          <article class="what-about-us-card what-about-us__item-four swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -526,7 +529,7 @@
               вещь, которую я купил,&nbsp;превзошла мои ожидания.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-five">
+          <article class="what-about-us-card what-about-us__item-five swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -552,7 +555,7 @@
               последним модным тенденциям.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-six">
+          <article class="what-about-us-card what-about-us__item-six swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -580,7 +583,195 @@
           </article>
         </div>
       </div>
+    </section> -->
+
+    <section class="what-about-us">
+      <div class="container">
+        <div class="what-about-us__wrapper">
+          <div class="what-about-us__wrap">
+            <h2 class="what-about-us__title title-md">Что о нас говорят</h2>
+            <div class="what-about-us__button-wrapper">
+              <button class="what-about-us__button--left ">
+                <svg class="" width="23" height="23">
+                  <use class="" href="./icons/What-about-us.svg#slider-button-left"></use>
+                </svg>
+              </button>
+              <button class="what-about-us__button-right ">
+                <svg class="" width="23" height="23">
+                  <use class="" href="./icons/What-about-us.svg#slider-button-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper what-about-us__list">
+              <article class="what-about-us-card what-about-us__item-one swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Виталий У.</h3>
+                <p class="what-about-us__text">
+                  «Я в восторге от качества и стиля одежды,&nbsp;которую получил от
+                  Shop.co. От повседневных вещей до элегантных платьев — каждая
+                  покупка превзошла мои ожидания.»
+                </p>
+              </article>
+              <article class="what-about-us-card what-about-us__item-two swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Даниил В.</h3>
+                <p class="what-about-us__text">
+                  «Раньше было трудно найти одежду под мой стиль, пока я не открыл
+                  Shop.co. Их ассортимент впечатляет и подходит для разных вкусов
+                  и случаев.»
+                </p>
+              </article>
+              <article class="what-about-us-card what-about-us__item-three swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Альберт Б.</h3>
+                <p class="what-about-us__text">
+                  «Я всегда ищу уникальные модные вещи и&nbsp;был рад открыть для
+                  себя Shop.co. Их выбор одежды очень разнообразен и полностью
+                  соответствует последним модным трендам.»
+                </p>
+              </article>
+              <article class="what-about-us-card what-about-us__item-four swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Sarah M.</h3>
+                <p class="what-about-us__text">
+                  «Я поражён качеством и стилем одежды, которую получил от
+                  Shop.co. От повседневной одежды до элегантных платьев — каждая
+                  вещь, которую я купил,&nbsp;превзошла мои ожидания.»
+                </p>
+              </article>
+              <article class="what-about-us-card what-about-us__item-five swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Матвей К.</h3>
+                <p class="what-about-us__text">
+                  «Я всегда ищу уникальные модные вещи и рад, что открыл Shop.co.
+                  Их ассортимент одежды разнообразен и полностью соответствует
+                  последним модным тенденциям.»
+                </p>
+              </article>
+              <article class="what-about-us-card what-about-us__item-six swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Максим А.</h3>
+                <p class="what-about-us__text">
+                  «Я впечатлён качеством и стилем одежды от Shop.co. От
+                  повседневных вещей до элегантных платьев — каждая покупка
+                  превзошла мои ожидания.»
+                </p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+
+
+
+
   </main>
   <footer class="footer">
     <div class="footer__container container">

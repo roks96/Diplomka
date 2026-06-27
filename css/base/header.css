@@ -209,7 +209,9 @@
 
 	}
 
-	.header__burger {}
+	.header__burger {
+		z-index: var(--layer-4);
+	}
 
 	.header__menu--open {
 		left: 0;
@@ -222,15 +224,18 @@
 		display: none;
 	}
 
-	.burger__icon-cross.burger__menu--open{
+	
+
+	.burger--open .burger__icon-cross {
 		display: block;
-		
 	}
 
-	/* .burger__icon-cross,
-	.header__menu--open.burger__icon-menu{
+	.burger--open .burger__icon-menu {
 		display: none;
-	} */
+	}
+
+
+	
 
 
 

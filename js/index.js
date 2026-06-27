@@ -1,11 +1,12 @@
 import HeaderFixed from './header.js';
 import BurgerMenu from './burger.js';
+import Slider from './slider.js';
 
 
 try {
 	const headerFixed = new HeaderFixed({
-		HEADER: 'header__menu',
-		HEADER_FIXED: 'menu__list',
+		HEADER: 'header',
+		HEADER_FIXED: 'menu__fixed',
 	});
 
 	new BurgerMenu(
@@ -27,13 +28,9 @@ try {
 		headerFixed
 	);
 
-	new Modal({
-		PAGE_BODY: 'page__body',
-			PAGE_BODY_NO_SCROLL: 'page__body--no-scroll',
-});
+	
 
-	productSlider();
-	sizes();
+	Slider();
 } catch (error) {
 	console.error(error);
 }
